@@ -2397,7 +2397,7 @@ li.dropdown > ul.dropdown-menu > li a {
   bottom: 0;
 }
 .color-green {
-  color: rgb(146,195,48);
+  color: rgb(146,195,48) !important;
 }
 .icon-50 {
   width: 50px;
@@ -2409,4 +2409,12 @@ li.dropdown > ul.dropdown-menu > li a {
 }
 .newsletter {
   margin-top: 30px;
+}
+.list-default {
+  list-style: circle;
+  list-style-type: disc;
+  margin-left: 50px;
+}
+.color-orange {
+  color: rgb(254,125,23);
 }
