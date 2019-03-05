@@ -2418,3 +2418,19 @@ li.dropdown > ul.dropdown-menu > li a {
 .color-orange {
   color: rgb(254,125,23);
 }
+.content-div {
+  position: relative;
+}
+.content .icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+.content .detail {
+  display: inline-block;
+  margin-left: 70px;
+}
+.p-5 {
+  padding: 5px;
+}
