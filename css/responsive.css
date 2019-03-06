@@ -37,6 +37,9 @@
   .stick .main-menu ul.navbar-nav li a {
     padding: 24px 0px;
   }
+  .stick .main-menu li.dropdown > ul.dropdown-menu > li a {
+    padding: 10px 20px;
+  }
   .tab-menu ul.nav li a {
     padding: 10px 16px;
   }
