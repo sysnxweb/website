@@ -35,7 +35,7 @@
   <link href="./../css/responsive.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target="#navbar-example" class="web">
+<body data-spy="scroll" data-target="#navbar-example" class="web about-us">
     <div id="preloader"></div>
     <header>
     <!-- header-area start -->
@@ -70,9 +70,9 @@
                     <a class="page-scroll" href="../index.html#home">Home</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="../about-us/">About Us</a>
+                    <a class="page-scroll active" href="../about-us/">About Us</a>
                   </li>
-                  <li class="dropdown active">
+                  <li class="dropdown">
                     <a aria-expanded="true" href="../index.html#services">Services</a>
                     <ul class="dropdown-menu" role="menu">
                       <li><a href="../digital-marketing/">Digital Marketing</a></li>
@@ -246,11 +246,13 @@
                                 Get all news from sysnxweb to your inbox
                             </p>
                             <div class="subs-feilds">
-                                <div class="suscribe-input">
-                                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
-                                    <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
-                                    <div id="msg_Submit" class="h3 text-center hidden"></div>
-                                </div>
+                                <form action="http://formspree.io/contact@sysnxweb.com" method="post">
+                                    <div class="suscribe-input">
+                                        <input name="email" type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
+                                        <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
+                                        <div id="msg_Submit" class="h3 text-center hidden"></div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

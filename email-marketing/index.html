@@ -103,7 +103,7 @@
   <!--Start of Digital Marketing-->
   <div class="row">
         <div class="col-md-12 col-sm-12">
-          <img class="content-img" src="./../img/email-marketing.png"/>
+          <img class="content-img" src="./../img/email-marketing.jpg"/>
         </div>
     </div>
     <div class="container content">  
@@ -151,7 +151,7 @@
                         <div class="services-details">
                             <div class="single-services">
                                 <img src="../img/icons/mail-tick.svg" class="icon-50"/>
-                                <h4>Social Consultancy</h4>
+                                <h4 class="color-green" >Social Consultancy</h4>
                                 <p>
                                     All of us are far too familiar with email newsletters that waste our time, email pitches that annoy us, 
                                     and downright spam. Those don’t work.
@@ -165,7 +165,7 @@
                         <div class="services-details">
                             <div class="single-services">
                                 <img src="../img/icons/info.svg" class="icon-50"/>
-                                <h4>Value exchange</h4>
+                                <h4 class="color-green" >Value exchange</h4>
                                 <p>
                                     What works is a value exchange — your valuable information for your prospect’s valued time. Your subscribers 
                                     need to know they can trust you … that you’re not a soulless self-promoting spam-bot.
@@ -206,11 +206,13 @@
                                 Get all news from sysnxweb to your inbox
                             </p>
                             <div class="subs-feilds">
-                                <div class="suscribe-input">
-                                    <input type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
-                                    <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
-                                    <div id="msg_Submit" class="h3 text-center hidden"></div>
-                                </div>
+                                <form action="http://formspree.io/contact@sysnxweb.com" method="post">
+                                    <div class="suscribe-input">
+                                        <input name="email" type="email" class="email form-control width-80" id="sus_email" placeholder="Email">
+                                        <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
+                                        <div id="msg_Submit" class="h3 text-center hidden"></div>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
