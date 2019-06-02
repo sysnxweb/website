@@ -1,3 +1,6 @@
+const TO = "contact@sysnxweb.com";
+const URL = "";
+
 (function($) {
   "use strict";
 
@@ -210,3 +213,41 @@
   }
 
 })(jQuery);
+
+/**
+ * 
+ * @param {*} event 
+ */
+let submitForm = event => {
+  event.preventDefault();
+  event.stopPropagation();
+  sendmail(constructMessage($(event.target).serializeArray()), event.target.id)
+  return false;
+}
+
+function constructMessage(form) {
+  return form.reduce((acc, crr) => {
+    return acc + `<strong>${crr.name}</strong> : ${crr.value} <br/>`;
+  }, "");
+}
+
+function sendmail(message, id) {
+  $.ajax({
+    url: URL,
+    method: "GET",
+    data: {
+      to: TO,
+      message: message
+    },
+    complete: status => {
+      if(id === "subscribe") {
+        $("#message").show();
+      } else {
+        $("#sendmessage").show();
+      }
+      setTimeout(_ => {
+        location.reload();
+      }, 3000);
+    }
+  })
+}

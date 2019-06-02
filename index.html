@@ -357,10 +357,11 @@
                           <p>
                               Get all news from sysnxweb to your inbox
                           </p>
+                          <div id="message">You are successfully subscribed to our newsletter.</div>
                           <div class="subs-feilds">
-                              <form action="http://formspree.io/contact@sysnxweb.com" method="post">
+                              <form id="subscribe" onsubmit="submitForm(event)">
                                 <div class="suscribe-input">
-                                  <input type="email" class="email form-control width-80" id="sus_email" name="email" placeholder="Email">
+                                  <input type="email" class="email form-control width-80" id="sub_email" name="sub_email" placeholder="Email">
                                   <button type="submit" id="sus_submit" class="add-btn width-20">Subscribe</button>
                                   <div id="msg_Submit" class="h3 text-center hidden"></div>
                                 </div>
@@ -451,9 +452,9 @@
           <!-- Start  contact -->
           <div class="col-md-6 col-sm-6 col-xs-12">
             <div class="form contact-form">
-              <div id="sendmessage">Your message has been sent. Thank you!</div>
+              <div id="sendmessage">Your message has been sent. Our team will reach you shortly.Thank you!</div>
               <div id="errormessage"></div>
-              <form action="http://formspree.io/contact@sysnxweb.com" method="post" role="form" class="contactForm">
+              <form class="contactForm" onsubmit="submitForm(event)">
                 <div class="form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                   <div class="validation"></div>

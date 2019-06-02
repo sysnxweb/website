@@ -2435,3 +2435,8 @@ li.dropdown > ul.dropdown-menu > li a {
 .p-5 {
   padding: 5px;
 }
+#message {
+  display: none;
+  color: #fff;
+  font-weight: 600;
+}
